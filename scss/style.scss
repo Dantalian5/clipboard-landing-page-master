@@ -82,3 +82,121 @@ body{
 
 
 }
+
+.section1{
+    display: grid;
+    grid-template-areas: 
+        "title"
+        "img"
+        "txt1"
+        "txt2"
+        "txt3";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 3.5rem;
+    column-gap: 1rem;
+
+    .text1{
+        grid-area: txt1;
+    }
+    .text2{
+        grid-area: txt2;
+    }
+    .text3{
+        grid-area: txt3;
+    }
+}
+.section2{
+    display: grid;
+    grid-template-areas: 
+        "title"
+        "img";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 3.5rem;
+    column-gap: 1rem;
+}
+.section3{
+    display: grid;
+    grid-template-areas: 
+        "title"
+        "txt1"
+        "txt2"
+        "txt3";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 3.5rem;
+    column-gap: 1rem;
+
+    .text1{
+        grid-area: txt1;
+    }
+    .text2{
+        grid-area: txt2;
+    }
+    .text3{
+        grid-area: txt3;
+    }
+}
+.section_container{
+    width: 100%;
+    max-width: 90rem;
+    min-width: 21.875rem;
+    height: auto;
+    padding: 3rem 2.2rem;
+    margin-block: 2rem;
+
+    .section_title{
+        grid-area: title;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /*padding: 1rem;*/
+
+        h2{
+            font: 600 1.7rem $font-family;
+            color: $color-n-Dark-Grayish-Blue;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        p{
+            font: 400 1rem $font-family;
+            color: $color-n-Grayish-Blue;
+            text-align: center;
+            line-height: 1.8rem;
+        }
+    }
+    .section_img{
+        grid-area: img;
+        width: 100%;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .section_info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        img{
+            width: auto;
+            height: auto;
+            margin-bottom: 2rem;
+        }
+        h3{
+            font: 600 1.5rem $font-family;
+            color: $color-n-Dark-Grayish-Blue;
+            text-align: center;
+            margin-bottom: .5rem;
+        }
+        p{
+            font: 400 1rem $font-family;
+            color: $color-n-Grayish-Blue;
+            text-align: center;
+            line-height: 1.8rem;
+        }
+    }
+}

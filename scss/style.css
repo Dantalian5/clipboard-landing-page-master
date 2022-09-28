@@ -74,4 +74,112 @@ body .attribution a {
 .header_container .header_container_button .button2 {
   background: hsl(233deg, 100%, 69%);
   box-shadow: 0px 4px 0px hsla(233deg, 66%, 43%, 0.76);
+}
+
+.section1 {
+  display: grid;
+  grid-template-areas: "title" "img" "txt1" "txt2" "txt3";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 3.5rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+.section1 .text1 {
+  grid-area: txt1;
+}
+.section1 .text2 {
+  grid-area: txt2;
+}
+.section1 .text3 {
+  grid-area: txt3;
+}
+
+.section2 {
+  display: grid;
+  grid-template-areas: "title" "img";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 3.5rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+
+.section3 {
+  display: grid;
+  grid-template-areas: "title" "txt1" "txt2" "txt3";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 3.5rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+.section3 .text1 {
+  grid-area: txt1;
+}
+.section3 .text2 {
+  grid-area: txt2;
+}
+.section3 .text3 {
+  grid-area: txt3;
+}
+
+.section_container {
+  width: 100%;
+  max-width: 90rem;
+  min-width: 21.875rem;
+  height: auto;
+  padding: 3rem 2.2rem;
+  margin-block: 2rem;
+}
+.section_container .section_title {
+  grid-area: title;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*padding: 1rem;*/
+}
+.section_container .section_title h2 {
+  font: 600 1.7rem "Bai Jamjuree", sans-serif;
+  color: hsl(210deg, 10%, 33%);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.section_container .section_title p {
+  font: 400 1rem "Bai Jamjuree", sans-serif;
+  color: hsl(201deg, 11%, 66%);
+  text-align: center;
+  line-height: 1.8rem;
+}
+.section_container .section_img {
+  grid-area: img;
+  width: 100%;
+}
+.section_container .section_img img {
+  width: 100%;
+  height: auto;
+}
+.section_container .section_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section_container .section_info img {
+  width: auto;
+  height: auto;
+  margin-bottom: 2rem;
+}
+.section_container .section_info h3 {
+  font: 600 1.5rem "Bai Jamjuree", sans-serif;
+  color: hsl(210deg, 10%, 33%);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.section_container .section_info p {
+  font: 400 1rem "Bai Jamjuree", sans-serif;
+  color: hsl(201deg, 11%, 66%);
+  text-align: center;
+  line-height: 1.8rem;
 }/*# sourceMappingURL=style.css.map */
